@@ -1,0 +1,339 @@
+
+/* HEADER */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cairo, Tahoma, Arial;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+/* HEADER */
+.hero-section {
+    min-height: 80vh;
+    background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('bg.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    padding: 40px 5%;
+}
+
+.hero-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* يرمي اللوجو في طرف والنص في طرف */
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-logo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* توسط اللوجو داخل مساحته اليمين */
+    padding-left:200px ;
+    align-items: flex-start;
+    margin-top: -30px;
+
+}
+
+.hero-logo img {
+    max-width: 300px; /* حجم اللوجو كبير وواضح */
+    height: auto;
+    border-radius: 25%;
+}
+
+.hero-text {
+    flex: 1.5;
+    text-align: right; /* محاذاة النص لليمين لكن مكانه على يسار اللوجو */
+}
+
+.hero-text h1 {
+    font-size: 35px;
+    color: #b0001a; /* اللون الأحمر من كودك */
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #e61e2b;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* للموبايل: يخلي اللوجو فوق والكلام تحت */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text {
+        text-align: center;
+    }
+}
+
+
+.cars-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f5f5f5;
+    margin-top: 50px;
+  
+}
+
+.cars-section h2 {
+    margin-bottom: 20px;
+    color: #c00;
+}
+.car-slider {
+    width: 100% !important;   /* تأكد إن الصندوق واخد العرض كله */
+    max-width: 1200px;        /* ده الحجم الأقصى للصورة */
+    margin: 0 auto;           /* عشان يفضل في النص */
+    text-align: center;
+}
+
+.car-slider img {
+    width: 80%!important;   /* الصورة تملا الصندوق */
+    height: auto !important;  /* الحفاظ على الأبعاد */
+    max-width: 100% !important; 
+    border-radius: 12px;
+}
+
+.car-buttons {
+    margin-top: 20px;
+}
+
+.car-buttons button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    background: red;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.car-buttons button:hover {
+    background: darkred;
+}
+
+/* CAR SLIDER */
+.car-slider img{
+  width:90%;
+  max-width:420px;
+  margin-top:30px;
+}
+.dots span{
+  display:inline-block;
+  width:10px;height:10px;
+  background:#aaa;
+  border-radius:50%;
+  margin:10px 5px;
+  cursor:pointer;
+}
+
+/* SERVICES */
+.services{
+  padding:80px 20px;
+  text-align:center;
+}
+.services h2{margin-bottom:40px}
+.cards{
+  display:grid;
+  gap:25px;
+}
+.card{
+  background:#f5f5f5;
+  padding:30px;
+  border-radius:20px;
+}
+.card img
+{
+    width:100%;
+    margin-bottom:15px;
+    border-radius: 20%;
+
+}
+
+
+/* FEATURES */
+.features{
+  display:flex;
+  flex-direction:column;
+  gap:30px;
+  padding:80px 20px;
+}
+.features img{width:50%;border-radius:20px}
+.features p{line-height:1.9}
+
+/* LOCATION */
+.location{padding:80px 20px;text-align:center}
+.location iframe{
+  width:100%;
+  height:300px;
+  border:0;
+  border-radius:20px;
+}
+
+/* CONTACT */
+.contact{
+  background:#000;
+  color:#fff;
+  padding:80px 20px;
+  text-align:center;
+}
+.info{margin:10px 0}
+.social a{
+  color:#c00;
+  margin:0 10px;
+  text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+  background:#111;
+  color:#aaa;
+  text-align:center;
+  padding:25px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25d366;
+  color:#fff;
+  width:55px;height:55px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:26px;
+  text-decoration:none;
+}
+
+/* DESKTOP */
+@media(min-width:768px){
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .features{flex-direction:row;align-items:center}
+}
+/* إعدادات الخط والعناصر الأساسية */
+/* CONTACT SECTION */
+.contact-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.contact-title {
+    color: #c00;
+    font-size: 28px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.contact-item {
+    margin-bottom: 35px;
+}
+
+.icon-circle {
+    background-color: #c00;
+    color: white;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-size: 28px;
+}
+
+.contact-item h3 {
+    color: #c00;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    color: #666;
+    font-size: 17px;
+}
+
+.contact-link {
+    color: #0000EE;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+/* SCROLL UP BUTTON */
+.scroll-top {
+    background: #c00;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Tahoma, Arial;
+}
+body{background:#fff;color:#111}
+
+.stats-section {
+    background: linear-gradient(to bottom, #6b3e54, #d32f2f); /* تدرج الألوان كما في الصورة */
+    padding: 60px 20px;
+    border-radius: 40px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column; /* الترتيب الافتراضي للموبايل */
+    gap: 30px;
+    margin: 20px;
+}
+
+.stat-card h2 {
+    font-size: 45px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.stat-card p {
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+/* تحويل السيكشن ليكون أفقي في شاشات الكمبيوتر */
+@media (min-width: 768px) {
+    .stats-section {
+        flex-direction: column; /* العناصر جنب بعض في الشاشات الكبيرة */
+        justify-content: space-around;
+    }
+}
