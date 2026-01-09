@@ -11,6 +11,8 @@
 body {
     background: #f2f2f2;
     direction: rtl;
+    margin: 0;
+    padding: 0;
 }
 
 /* HEADER */
