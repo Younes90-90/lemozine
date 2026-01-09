@@ -10,6 +10,7 @@
 
 body {
     background: #f2f2f2;
+    direction: rtl;
 }
 
 /* HEADER */
@@ -32,9 +33,8 @@ body {
 .hero-logo {
     flex: 1;
     display: flex;
-    justify-content: flex-end; /* توسط اللوجو داخل مساحته اليمين */
-    padding-left:200px ;
-    align-items: flex-start;
+    justify-content: center; /* توسط اللوجو داخل مساحته اليمين */
+    align-items:center;
     margin-top: -30px;
 
 }
