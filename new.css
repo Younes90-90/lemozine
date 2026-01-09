@@ -11,8 +11,6 @@
 body {
     background: #f2f2f2;
     direction: rtl;
-    margin: 0;
-    padding: 0;
 }
 
 /* HEADER */
@@ -21,13 +19,14 @@ body {
     background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('bg.jpg') center/cover;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 40px 5%;
 }
 
 .hero-container {
     display: flex;
     width: 100%;
-    justify-content: space-between; /* يرمي اللوجو في طرف والنص في طرف */
+    justify-content: center; /* يرمي اللوجو في طرف والنص في طرف */
     align-items: center;
     gap: 40px;
 }
