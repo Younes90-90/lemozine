@@ -341,7 +341,8 @@ body{background:#fff;color:#111}
 
 .hero {
   position: relative;
-  height: 80vh;
+  height: 100vh;
+  width: 100%;
   background-image: url("207686.jpeg.webp"); /* 👈 هنا الصورة */
   background-size: cover;
   background-position: center;
@@ -349,6 +350,7 @@ body{background:#fff;color:#111}
   align-items: center;
   justify-content: center;
   direction: rtl;
+  overflow: hidden;
 }
 
 /* طبقة لون فوق الصورة */
