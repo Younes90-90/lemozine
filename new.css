@@ -6,7 +6,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Cairo, Tahoma, Arial;
-    overflow: hidden;
 }
 
 body {
@@ -344,7 +343,7 @@ body{background:#fff;color:#111}
   position: relative;
   height: 100vh;
   width: 100%;
-  background-image: url("207686.jpeg.webp"); /* 👈 هنا الصورة */
+  background-image: url("2023-Kia-Sportage-Redesign.webp"); /* 👈 هنا الصورة */
   background-size: cover;
   background-position: center;
   display: flex;
