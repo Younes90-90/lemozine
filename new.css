@@ -407,3 +407,142 @@ body{background:#fff;color:#111}
     font-size: 30px;
   }
 }
+.services-container {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.hero {
+    position: relative;
+    height: 60vh;
+    width: 90%;
+    margin: 0 auto;
+    /* الصورة الافتراضية */
+    background-image: url("2023-Kia-Sportage-Redesign.webp"); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    direction: rtl;
+    overflow: hidden;
+    border-radius: 40px; /* الحواف المستديرة زي الفيديو */
+    cursor: pointer; /* عشان المستخدم يعرف إنه يقدر يضغط */
+    transition: background-image 0.5s ease-in-out; /* حركة ناعمة عند التغيير */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 1;
+    background: rgba(170, 0, 40, 0.7); /* اللون الأحمر */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.btn-order {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background: #fff;
+    color: #aa0028;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+}
+.footer {
+    background: #fde6e6;
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+    padding-top: 50px;
+}
+
+.footer-container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.footer-box h3 {
+    color: #c4001a;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.footer-box h4 {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-box ul li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-box ul li span {
+    background: #c4001a;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 14px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-box p,
+.footer-box a {
+    font-size: 17px;
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-logo img {
+    max-width: 180px;
+    margin-bottom: 15px;
+}
+
+/* الجزء الأحمر السفلي */
+.footer-bottom {
+    background: #c4001a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
+}
+
+.footer-bottom span {
+    display: block;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* موبايل */
+@media (max-width: 600px) {
+    .footer-box {
+        text-align: center;
+    }
+
+    .footer-box ul li {
+        justify-content: center;
+    }
+}
