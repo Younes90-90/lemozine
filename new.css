@@ -503,7 +503,7 @@ body{background:#fff;color:#111}
   margin-bottom: 12px;
   position: relative;
   padding-right: 30px;
-  font-size: 16px;
+  font-weight:bold ;
 }
 
 .footer-box ul li::before {
@@ -520,18 +520,19 @@ body{background:#fff;color:#111}
         content: "\2713";
         position: absolute;
         right: 0;
-        color: #d7002c;
+        color: #44101b;
         font-weight: bold;
     }
 } /* <--- ده القوس اللي لازم تزيديه في سطر 515 */
 
 /* من هنا ورايح الكود هيشتغل على اللابتوب والموبايل عادي */
 .footer-box p, .footer-box a {
-    color: #333;
+    color: black;
+    font-weight: bold;
     /* باقي الكود... */
 }
 
 .footer-bottom {
-    background: #d7002c; /* ده اللون الأحمر اللي هيظهر للكل */
+    background: #550919; /* ده اللون الأحمر اللي هيظهر للكل */
     /* باقي الكود... */
 }
