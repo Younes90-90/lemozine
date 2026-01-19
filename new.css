@@ -484,9 +484,9 @@ body{background:#fff;color:#111}
 }
 
 .footer-box h3 {
-  color: #d7002c;
+  color: #c91e40;
   margin-bottom: 20px;
-  font-size: 22px;
+  font-weight: bold;
 }
 
 .footer-box h4 {
@@ -504,6 +504,7 @@ body{background:#fff;color:#111}
   position: relative;
   padding-right: 30px;
   font-weight:bold ;
+  color: #000;
 }
 
 .footer-box ul li::before {
@@ -527,12 +528,13 @@ body{background:#fff;color:#111}
 
 /* من هنا ورايح الكود هيشتغل على اللابتوب والموبايل عادي */
 .footer-box p, .footer-box a {
-    color: black;
+    color: #000;
     font-weight: bold;
+    text-decoration: none;
     /* باقي الكود... */
 }
 
 .footer-bottom {
-    background: #550919; /* ده اللون الأحمر اللي هيظهر للكل */
+    background: #44101b; /* ده اللون الأحمر اللي هيظهر للكل */
     /* باقي الكود... */
 }
