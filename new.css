@@ -544,5 +544,6 @@ body{background:#fff;color:#111}
 
     .footer-box ul li {
         justify-content: center;
+        width: 100%;
     }
 }
