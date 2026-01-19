@@ -1,10 +1,13 @@
 const cars = [
-  { name: "مرسيدس S-Class", image: "مرسيدس-E53-2025-.jpg" },
-  { name: "BMW الفئة السابعة", image: "x.jpg" },
-  { name: "تويوتا كامري", image: "Cover_.jfif" },
-  { name: "تويوتا كامري", image: "Cover_.jfif" },
-  { name: "تويوتا كامري", image: "Cover_.jfif" }
+  { name: "تويوتا كامري", image: "pngwing.com (5).png" },
+  { name: "هيونداي H1", image: "pngwing.com (7).png" },
+  { name: "تويوتا كامري", image: "pngwing.com (1).png" },
+  { name: "مرسيدس G class", image: "pngwing.com (3).png" },
+  { name: "رينو ميجان", image: "pngwing.com (6).png" },
+  { name: "مرسيدس 500", image: "pngwing.com.png" }
+
 ];
+
 
 let currentCar = 0;
 
@@ -60,3 +63,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     statsNumbers.forEach(num => statsObserver.observe(num));
 });
+let isFirstImage = true;
+
+function toggleHeroImage() {
+    const heroSection = document.getElementById('service-card-1');
+    
+    // أسماء الصور عندك (تأكد إن الأسماء مكتوبة صح)
+    const image1 = "2023-Kia-Sportage-Redesign.webp";
+    const image2 = "Mercedes-S500-2021-....jpg"; 
+
+    if (isFirstImage) {
+        heroSection.style.backgroundImage = `url('${image2}')`;
+    } else {
+        heroSection.style.backgroundImage = `url('${image1}')`;
+    }
+    
+    // عكس الحالة للمرة الجاية
+    isFirstImage = !isFirstImage;
+}
