@@ -514,33 +514,24 @@ body{background:#fff;color:#111}
   font-weight: bold;
 }
 
-.footer-box p,
-.footer-box a {
-  color: #333;
-  text-decoration: none;
-  font-size: 15px;
-  display: block;
-  margin-top: 5px;
-}
-
-/* الشريط السفلي */
-.footer-bottom {
-  background: #d7002c;
-  color: #fff;
-  text-align: center;
-  padding: 15px;
-  font-size: 14px;
-}
-
-.footer-bottom span {
-  display: block;
-  margin-top: 5px;
-  opacity: 0.85;
-}
-
-/* موبايل */
+/* سطر 509 */
 @media (max-width: 768px) {
-  .footer-logo img {
-    max-width: 120px;
-  }
+    .footer-box ul li::before {
+        content: "\2713";
+        position: absolute;
+        right: 0;
+        color: #d7002c;
+        font-weight: bold;
+    }
+} /* <--- ده القوس اللي لازم تزيديه في سطر 515 */
+
+/* من هنا ورايح الكود هيشتغل على اللابتوب والموبايل عادي */
+.footer-box p, .footer-box a {
+    color: #333;
+    /* باقي الكود... */
+}
+
+.footer-bottom {
+    background: #d7002c; /* ده اللون الأحمر اللي هيظهر للكل */
+    /* باقي الكود... */
 }
